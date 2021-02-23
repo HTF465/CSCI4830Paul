@@ -4,8 +4,8 @@ for f in "$1"/*; do
     SIZE="$(du -sh "${f}" | cut -f1)"
     NUM="$(wc -w "${f}" | cut -d' ' -f1)"
     echo "Processing $f file..."
-    echo "$SIZE"
-    echo "$NUM"
+    echo "File Size:  $SIZE"
+    echo "Word Count: $NUM"
   fi
 done
 
